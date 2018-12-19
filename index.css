@@ -1,0 +1,194 @@
+body
+{
+	margin: 0;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+.top-nav
+{
+	background-color: white;
+	position: sticky;
+	top: 0;
+	padding: 17px;
+	text-align: center;
+	z-index: 99;
+	box-shadow: 0 5px 5px 0px rgba(46, 49, 49, 0.5);
+}
+
+.top-nav a
+{
+	text-decoration: none;
+	padding: 12px;
+	color: black;
+	font-size: 1.7em;
+	font-family: 
+}
+
+.top-nav a:hover
+{
+	background-color: #ecf0f1;
+	color: #67809f;
+	transition: background-color,color 200ms ease-in;
+}
+
+.hero-section
+{
+	position: relative;	
+	height: 1000px;	
+	padding: 6em calc( 50% - 450px);
+}
+
+.parallax
+{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('https://c.pxhere.com/photos/9e/19/businesswomen_caucasian_consult_consultation_consulting_conversation_discussion_employees-910324.jpg!d');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: overlay;
+	background-color: rgba(255,255,255,0.8);
+	background-position: center;
+	background-attachment: fixed;	
+}
+
+.parallax-text
+{	
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	flex-flow: column wrap;	
+	align-items: center;
+	transform: translate(-50%,-50%);
+}
+
+.parallax-text::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #29f1c3;
+	z-index: -1;
+	padding: 6em calc(50% - 450px);
+	-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.parallax-text h2
+{
+	color: #22313f;
+	font-size: 4em;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.parallax-text p
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.parallax-text button
+{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 17px;
+	border-style: none;
+	color: #049372;
+	background-color: white;
+	font-weight: bold;
+	max-width: 400px;	
+	font-size: 1.3em;
+	position: relative;
+	transition: color 300ms ease-in-out;
+}
+
+
+.parallax-text button:hover
+{
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	/*transition: background-color,color 500ms ease-in-out;
+	animation: btnHover 500ms;
+	animation-fill-mode: forwards;*/
+}
+
+/*@keyframes btnHover
+{
+	10%{color: white;}
+	100%{color: #049372;background-color: white;font-weight: bold;}
+}
+*/
+
+.container
+{
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;	
+}
+
+.intro-img
+{
+	position: relative;
+}
+
+.intro-content
+{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.intro-content h2
+{
+	color: #22313f;
+	font-size: 3em;
+	text-align: center;
+}
+
+.font_Montserrat
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.font_News-cycle
+{
+	font-family: 'News Cycle', sans-serif;
+}
+
+.font_Archivo-black
+{
+	font-family: 'Archivo Black', sans-serif;
+}
+
+@media screen and (min-width: 900px)
+{
+	.container
+	{		
+		flex-flow: row nowrap;		
+	}
+
+}
+
+@media screen and (max-width: 900px)
+{
+	.parallax-text::before
+	{
+		clip-path: none;
+		-webkit-clip-path: none;
+	}
+}

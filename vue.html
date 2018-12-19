@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	
+</head>
+<body>
+<div id="app">
+	{{ message }}
+</div>
+
+<!--
+ “keep this element’s title attribute up-to-date with the message property on the Vue instance.” 
+ 
+ -title updates every time if we change the value of the message
+-->
+<div id="app-2">
+	<span v-bind:title="message">
+		Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+	</span>
+</div>
+
+<!-- If else condition -->
+<div id="app-3">
+	<span v-if="seen">Now you see me</span>
+</div>
+
+<!-- For loop -->
+<div id="app-4">
+	<ol>
+		<li v-for = "i in myFood">
+			{{ i.foodItems }}
+		</li>
+	</ol>
+</div>
+
+<!-- Handling user input -->
+<div id="app-5">
+	<p> {{ message }}</p>
+	<!-- v-on attach event listeners that invoke methods -->
+	<button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+
+<!-- v-model bindings input with the app state -->
+<div id="app-6">
+	<p> {{ message }} </p>
+	<input v-model="message">
+</div>
+
+<div id="app-7">
+	<!-- composing with components -->
+	<ol>
+		 <!-- Create an instance of the todo-item component -->
+		<todo-item 
+		v-for="item in groceryList"
+		v-bind:todo="item"
+		v-bind:key="item.id"
+		></todo-item>		
+	</ol>
+</div>
+
+<div id="app-7_1">
+	<ol>
+		<todo-myitem
+		v-for="wish in wishList"
+		v-bind:a="wish"
+		v-bind:key="wish.id">
+		</todo-myitem>
+	</ol>
+</div>
+
+<div id="demo">{{ fullName }}</div>
+<script src="vue.js"></script>
+</body>
+</html>
