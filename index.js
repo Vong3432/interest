@@ -11,3 +11,10 @@ function parallax()
 		$(".parallax").css("background-position","center " + ( w3Scroll * 0.05 )+"px");
 	}
 }
+
+$('.loader').hide();
+
+$(window).load(function() {
+   $('.loader').show();
+   $('.loader').fadeOut('slow');
+});
