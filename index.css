@@ -30,9 +30,10 @@ html
 .top-nav
 {
 	background-color: white;
-	position: sticky;
+	position: fixed;
 	position: -webkit-sticky;
 	top: 0;
+	width: 100%;
 	padding: 17px;
 	text-align: center;
 	z-index: 99;
@@ -291,7 +292,7 @@ html
 	position: relative;
 	display: flex;
 	flex-flow: column wrap;
-	background-color: gray;
+	background-color: white;
 	justify-content: center;
 }
 
