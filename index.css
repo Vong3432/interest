@@ -141,6 +141,8 @@ html
 	flex-flow: row wrap;
 	align-items: center;
 	position: relative;	
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .intro-img
@@ -195,6 +197,17 @@ html
 	list-style: square;
 	font-weight: normal;
 	font-size: 0.8em;
+}
+
+.category-section
+{
+	position: relative;	
+	height: 600px;	
+}
+
+.category-section .parallax
+{
+
 }
 
 .font_Montserrat
