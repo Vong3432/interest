@@ -139,12 +139,28 @@ html
 {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: center;
 	position: relative;	
 }
 
 .intro-img
 {
-	position: relative;
+	position: relative;	
+	box-shadow: 15px 10px 5px 0px silver;
+}
+
+.intro-img::before
+{
+	content: '';	
+	position: absolute;
+	margin-right: -1px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 500px;
+	background-color: white;
+	-webkit-clip-path: polygon(57% 100%, 100% 69%, 100% 100%);
+	clip-path: polygon(57% 100%, 100% 69%, 100% 100%);
 }
 
 .intro-content
@@ -158,6 +174,27 @@ html
 	color: #22313f;
 	font-size: 3em;
 	text-align: center;
+}
+
+.intro-content ol
+{		
+	max-width: 700px;	
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.intro-content ol li
+{	
+	margin-top: 30px;
+}
+
+.intro-content ol ul
+{
+	letter-spacing: 1.5px;
+	margin-top: 30px;
+	list-style: square;
+	font-weight: normal;
+	font-size: 0.8em;
 }
 
 .font_Montserrat
@@ -175,7 +212,12 @@ html
 	font-family: 'Archivo Black', sans-serif;
 }
 
-@media screen and (min-width: 900px)
+.font_Merriweather
+{
+	font-family: 'Merriweather', serif;
+}
+
+@media screen and (min-width: 1025px)
 {
 	.container
 	{		
@@ -186,9 +228,20 @@ html
 
 @media screen and (max-width: 900px)
 {
+	.top-nav a:not(:first-child)
+	{
+		display: none;
+	}
+
 	.parallax-text::before
 	{
 		clip-path: none;
 		-webkit-clip-path: none;
+	}
+
+	.intro-content
+	{
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
