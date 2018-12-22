@@ -245,6 +245,7 @@ html
 	background-color: rgba(255,255,255,0.8);
 	background-position: center;
 	background-attachment: fixed;	
+	width: 100%;	
 }
 
 .small-section .parallax2 h2::before
@@ -298,6 +299,9 @@ html
 	align-items: center;
 	max-width: 800px;
 	margin-bottom: 30px;
+	margin-left: 3%;
+	margin-right: 3%;
+	box-shadow: 0 0 0 1px black;
 }
 
 .card-image img
