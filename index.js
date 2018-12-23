@@ -21,14 +21,14 @@ function shrink()
 	if( w3Scroll > wPosition )
 	{
 		$(".top-nav").css("background-color","rgba(0,0,0,0.8)");
-		$(".top-nav").css("padding","14px");
+		$(".top-nav").css("padding","3px");
 		$(".top-nav a").css("color","white");		
 	}
 
 	else
 	{
 		$(".top-nav").css("background-color","white");
-		$(".top-nav").css("padding","17px");
+		$(".top-nav").css("padding","5px");
 		 $(".top-nav a").css("color","black");		
 	}
 

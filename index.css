@@ -34,12 +34,16 @@ html
 	position: -webkit-fixed;
 	top: 0;
 	width: 100%;
-	padding: 17px;
+	padding: 5px;
 	text-align: center;
 	z-index: 99;
 	transition: padding 200ms ease-in-out;
 	-webkit-transition:padding 200ms ease-in-out;
 	box-shadow: 0 5px 5px 0px rgba(46, 49, 49, 0.5);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .top-nav a
@@ -57,6 +61,11 @@ html
 	color: #29f1c3 !important;
 	transition: color 200ms ease-in;
 	-webkit-transition:color 200ms ease-in;
+}
+
+.top-nav input[type="text"]
+{		
+	margin-left: 5%;
 }
 
 .hero-section
@@ -301,7 +310,8 @@ html
 	margin-bottom: 30px;
 	margin-left: 3%;
 	margin-right: 3%;
-	box-shadow: 0 0 0 2px black;
+	/*box-shadow: 0 0 0 2px black;*/
+	box-shadow: 1px 2px 3px 2px silver;
 }
 
 .card-image img
@@ -441,6 +451,11 @@ html
 @media screen and (max-width: 900px)
 {
 	.top-nav a:not(:first-child)
+	{
+		display: none;
+	}
+
+	.top-nav input[type="text"]
 	{
 		display: none;
 	}
