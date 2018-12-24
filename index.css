@@ -336,6 +336,12 @@ html
 	margin: 10px;
 	max-width: 600px;
 	width: 100%;
+	transition: box-shadow 100ms ease-in;
+}
+
+.card--column:hover
+{
+	box-shadow: 2px 2px 8px 2px grey;
 }
 
 .card--column .card-image
