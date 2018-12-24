@@ -66,6 +66,18 @@ html
 .top-nav input[type="text"]
 {		
 	margin-left: 5%;
+	max-width: 600px;
+	width: 100%;
+	border-radius: 25px;
+	padding: 10px;
+	border: 2px solid #22313f;
+	transition: border 300ms ease-in;
+	outline: none;
+}
+
+.top-nav input[type="text"]:focus
+{		
+	border: 2px solid #03a678;
 }
 
 .hero-section
@@ -313,6 +325,66 @@ html
 	/*box-shadow: 0 0 0 2px black;*/
 	box-shadow: 1px 2px 3px 2px silver;
 }
+
+/* feeds styling*/
+.card--column
+{
+	display: flex;
+	flex-flow: column nowrap;		
+	align-items: flex-start;
+	box-shadow: 1px 1px 5px 1px grey;
+	margin: 10px;
+	max-width: 600px;
+	width: 100%;
+}
+
+.card--column .card-image
+{
+	/*box-shadow: 0px 2px 0px -1px black;*/
+	box-shadow: none;
+}
+
+.card--column .card-image img
+{
+	max-width: 600px;
+	width: 100%;
+	max-height: 250px;
+	
+	object-fit: cover;
+}
+
+.card--column .card-content h2,.card--column .card-content p,.card--column .card-content button
+{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.card--column .card-content button
+{
+	align-self: flex-end;	
+}
+
+.card--column .card-content h2
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.card--column .card-content p
+{	
+	word-wrap: break-word;
+	font-size: 1.1em;
+}
+
+.card--column .card-content
+{
+	max-width: none;
+	width: initial;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+/* feeds styling end */
 
 .card-image img
 {

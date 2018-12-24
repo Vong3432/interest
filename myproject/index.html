@@ -1,0 +1,28 @@
+<html>
+   <head>
+      <title>VueJs Introduction</title>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.0/vue.js"></script>
+   </head>
+   <body>
+      <div id = "intro" style = "text-align:center;">
+         <h1>Firstname:{{ firstname }}</h1>
+         <h1>Lastname:{{ lastname }}</h1>
+         <h1>{{ mydetails() }}</h1>
+         <div v-html = "htmlcontent"></div>
+         <img v-bind:src="imgsrc" width="300" height="250">
+      </div>
+
+      <div id="component_test">
+      	<testcomponent></testcomponent>
+      </div>
+
+      <div id = "component_test1">
+         <testcomponent></testcomponent>
+      </div>
+
+      <div id = "component_test2">
+      	  <mycomponent></mycomponent>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>

@@ -20,9 +20,9 @@ function shrink()
 	var w3Scroll = $(window).scrollTop();
 	if( w3Scroll > wPosition )
 	{
-		$(".top-nav").css("background-color","rgba(0,0,0,0.8)");
+		// $(".top-nav").css("background-color","rgba(0,0,0,0.8)");
 		$(".top-nav").css("padding","3px");
-		$(".top-nav a").css("color","white");		
+		//$(".top-nav a").css("color","white");		
 	}
 
 	else
