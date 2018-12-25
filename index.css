@@ -55,6 +55,18 @@ html
 	
 }
 
+.icon-animate--color
+{
+	animation: iconChgColor 3000ms infinite ease-in-out;
+}
+
+@keyframes iconChgColor
+{
+	0%{color: inherit;}
+	50%{color: red;}
+	100%{color: inherit;}
+}
+
 .top-nav a:hover
 {
 	/*background-color: #ecf0f1;*/
@@ -341,7 +353,7 @@ html
 
 .card--column:hover
 {
-	box-shadow: 2px 2px 8px 2px grey;
+	box-shadow: 2px 2px 8px 2px #6c7a89;
 }
 
 .card--column .card-image
@@ -354,8 +366,7 @@ html
 {
 	max-width: 600px;
 	width: 100%;
-	max-height: 250px;
-	
+	max-height: 250px;	
 	object-fit: cover;
 }
 
@@ -396,13 +407,13 @@ html
 {
 	max-width: 200px;
 	width: 100%;
-	max-height: 200px;
+	height: 200px;
 	object-fit: cover;	
 }
 
 .card-image
 {
-	box-shadow: 2px 0px 0px -1px black;
+	/*box-shadow: 2px 0px 0px -1px black;*/
 	padding: 10px;
 	margin-right: 5px;
 	margin-left: 5px;
@@ -410,6 +421,7 @@ html
 
 .card-content
 {
+	/*box-shadow: -2px 0px 0px -1px black;*/
 	padding: 10px;
 	max-width: 600px;
 	width: 100%;	
@@ -564,10 +576,10 @@ html
 		flex-flow: row wrap;
 	}
 
-	.card-image
+/*	.card-image
 	{
 		box-shadow: 0px 2px 0px -1px black;
-	}
+	}*/
 
 	.card-image img
 	{
