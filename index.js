@@ -2,6 +2,13 @@ $(window).scroll(function(){
 	parallax();
 	shrink();
 	
+	var w3Scroll = $(window).scrollTop();
+	var intro = $(".intro-content");
+	var intro_position = intro.position();
+	if ( w3Scroll = intro_position )
+	{
+		$(".intro-content").addClass("animate-fadeIn");
+	}
 })
 
 
