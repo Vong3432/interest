@@ -1,7 +1,25 @@
 $(window).scroll(function(){
 	parallax();
 	shrink();
+	openNav();
+	closeNav();
 })
+
+function openNav()
+{
+	$(".top-nav").css("display","none");
+	$(".side-bar").css("display","flex");
+	$(".top-nav").addClass(".overlay");	
+	$(".overlay").css("display","block");
+}
+
+function closeNav()
+{
+	$(".top-nav").css("display","flex");
+	$(".side-bar").css("display","none");
+	$(".top-nav").removeClass(".overlay");
+	$(".overlay").css("display","none");	
+}
 
 function parallax()
 {
