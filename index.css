@@ -59,36 +59,28 @@ html
 	z-index: 98;
 	display: none;
 	overflow-x: hidden;
-
 }
 
 .side-bar
 {	
-	display: none;
+	margin-left: -500px;
+	display: flex;
 	flex-flow: column nowrap;
 	background-color: white;
-	position: fixed;
-	position: -webkit-fixed;
+	position: absolute;
+	position: -webkit-absolute;
 	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	width: 70%;
 	height: 100%;
 	padding: 5px;
 	text-align: center;
 	z-index: 99;
-	animation: sideBar 400ms ease-in;
-	animation-fill-mode: forwards;
-}
-
-.close-sideBar-animation
-{
-	@animation: closeBar 400ms ease-in-out;
-	animation-fill-mode: forwards;
-}
-
-@keyframes closeBar
-{
-	0%{margin-left: 0;}
-	100%{margin-left: -500px;}
+	/*animation: sideBar 400ms ease-in;
+	animation-fill-mode: forwards;*/
+	align-items: center;		
 }
 
 @keyframes sideBar
