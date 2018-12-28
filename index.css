@@ -189,6 +189,7 @@ html
 	background: -webkit-linear-gradient(-45deg, #1ce0d0 0%,#39ebd0 62%,#93f3e1 100%);  Chrome10-25,Safari5.1-6 
 	background: linear-gradient(135deg, #1ce0d0 0%,#39ebd0 62%,#93f3e1 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
 	*/
+	background-color: rgba(255,255,255,0.2);
 	z-index: -1;
 	padding: 6em calc(50% - 450px);
 	-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -197,7 +198,7 @@ html
 
 .parallax-text h2
 {
-	/*color: #22313f;*/
+	/*color: #22313f;*/	
 	color: white;
 	font-size: 4em;
 	margin-left: 5%;
@@ -211,6 +212,7 @@ html
 	margin-right: 5%;
 	font-size: 1.5em;
 	text-align: center;
+	color: white;
 }
 
 .parallax-text button
