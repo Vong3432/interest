@@ -7,10 +7,13 @@ $(window).scroll(function(){
 	var intro_position = intro.position();
 	if ( w3Scroll = intro_position )
 	{
-		$(".intro-content").addClass("animate-fadeIn");
-	}
+		$(".intro-content").addClass("animate-fadeIn");				
+	}	
+
 })
 
+var test = (x,y) => x * y;
+console.log(test(1,2));
 
 // function openNav()
 // {
@@ -33,8 +36,9 @@ function parallax()
 	var w3Scroll = $(window).scrollTop();
 	if( w3Scroll > 0 )
 	{
-		$(".parallax").css("background-position","center " + ( w3Scroll * 0.05 )+"px");
+		$(".parallax").css("background-position","center " + ( w3Scroll * 0.05 )+"px");		
 	}
+
 	
 }
 
@@ -46,7 +50,7 @@ function shrink()
 	if( w3Scroll > wPosition )
 	{
 		// $(".top-nav").css("background-color","rgba(0,0,0,0.8)");
-		$(".top-nav").css("padding","3px");
+		$(".top-nav").css("padding","2px");
 		//$(".top-nav a").css("color","white");		
 	}
 

@@ -258,77 +258,62 @@ html
 {
 	position: relative;
 	display: flex;
-	flex-flow: row wrap;	
+	flex-flow: row wrap;		
 	justify-content: center;
-	padding: 6em calc( 50% - 450px );
+	/*padding: 6em calc( 50% - 450px );*/
 	height: auto;
-	background: #18d2c2; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #18d2c2 0%, #26eacd 68%, #79f1db 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #18d2c2 0%,#26eacd 68%,#79f1db 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #18d2c2 0%,#26eacd 68%,#79f1db 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	min-height: 70vh;
+
+	
+}
+
+.intro-bg
+{	
+	background: #6fc1ff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #6fc1ff 0%, #19ffd1 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #6fc1ff 0%,#19ffd1 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #6fc1ff 0%,#19ffd1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
 }
 
 .intro-img
 {
 	position: relative;
-	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 .intro-section img
 {
+	border-radius: 50%;
+	border:3px solid white;
 	max-width: 300px;
 	max-height: 300px;
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	animation: rocketFly 3000ms infinite ease-in-out;
-	z-index: 2;
+	width: 100vw;
+	height: 100vw;
+	object-fit: cover;
+	animation: imgFly 4000ms infinite ease-in-out;
+	transition: all 200ms ease-in;
+	z-index: 2;	
 }
 
-.intro-img::before
+@keyframes imgFly
 {
-	content: '';
-	position: absolute;
-	top: 300px;
-	left: 0;
-	right: 0;
-	bottom: 0;	
-	border-radius: 50%;
-	opacity: 0.3;
-	background-color: black;	
-	height: 100px;
-	z-index: 1;	
-	/*transform-style: preserve-3d; */
-	transform: scale(0.8);
-	animation: rocketShadow 3000ms infinite ease-in-out;*/
-}
-
-@keyframes rocketShadow
-{
-	0%{transform: scale(0.6);opacity: 0.4;}
-	25%{transform: scale(0.4);opacity: 0.3;}
-	50%{transform: scale(0.2);opacity: 0.2;}
-	100%{transform: scale(0.6);opacity: 0.4;}
-}
-
-@keyframes rocketFly
-{
-	0%{transform: translateY(0px);}
+	0%{transform: translateY(0px) scale(0.9);}
 	
-	50%{
-		transform: translateY(-140px);		
+	30%{
+		transform: translateY(-20px);		
 	}
-	100%{transform: translateY(0px);}
+	100%{transform: translateY(0px) scale(0.9);}
 }
 
 .intro-section .intro-content
 {
 	opacity: 0;
 	padding: 10px;
-	max-width: 500px;
-	width: 100%;
-	color: white;	
-	margin-bottom: 100px;
+	max-width: 700px;	
+	color: black;	
+	margin-left: 3%;
+	margin-right: 3%;	
+
 }
 
 .animate-fadeIn
@@ -338,6 +323,7 @@ html
 	animation-delay: 700ms;
 }
 
+
 @keyframes fadeIn
 {
 	0%{opacity: 0;}
@@ -346,14 +332,16 @@ html
 
 .intro-section .intro-content p
 {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	letter-spacing: 1.1px;
 	font-weight: bold;
+	color: white;
 }
 
 .intro-section .intro-content h2
 {
-	font-size: 3em;	
+	font-size: 4em;	
+	color: white;
 }
 
 .small-section
