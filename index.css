@@ -143,8 +143,8 @@ html
 .hero-section
 {
 	position: relative;	
-	height: 1000px;	
-	padding: 6em calc( 50% - 450px);
+	height: 1200px;	
+	
 }
 
 .parallax
@@ -158,14 +158,14 @@ html
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-blend-mode: overlay;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(0,0,0,0.7);
 	background-position: center;
 	background-attachment: fixed;	
 }
 
 .parallax-text
 {	
-	color: black;
+	color: white;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -173,6 +173,7 @@ html
 	flex-flow: column wrap;	
 	align-items: center;
 	transform: translate(-50%,-50%);	
+	height: auto;
 }
 
 .hero-section .parallax-text::before
@@ -183,10 +184,11 @@ html
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: #1ce0d0; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #1ce0d0 0%, #39ebd0 62%, #93f3e1 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #1ce0d0 0%,#39ebd0 62%,#93f3e1 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #1ce0d0 0%,#39ebd0 62%,#93f3e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*background: #1ce0d0;  Old browsers 
+	background: -moz-linear-gradient(-45deg, #1ce0d0 0%, #39ebd0 62%, #93f3e1 100%);  FF3.6-15 
+	background: -webkit-linear-gradient(-45deg, #1ce0d0 0%,#39ebd0 62%,#93f3e1 100%);  Chrome10-25,Safari5.1-6 
+	background: linear-gradient(135deg, #1ce0d0 0%,#39ebd0 62%,#93f3e1 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+	*/
 	z-index: -1;
 	padding: 6em calc(50% - 450px);
 	-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
@@ -195,7 +197,8 @@ html
 
 .parallax-text h2
 {
-	color: #22313f;
+	/*color: #22313f;*/
+	color: white;
 	font-size: 4em;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -206,7 +209,7 @@ html
 {
 	margin-left: 5%;
 	margin-right: 5%;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	text-align: center;
 }
 
@@ -222,16 +225,16 @@ html
 	max-width: 400px;	
 	font-size: 1.3em;
 	position: relative;
-	transition: color 300ms ease-in-out;
-	-webkit-transition:color 300ms ease-in-out;
+	transition: transform 300ms ease-in-out;
+	-webkit-transition:transform 300ms ease-in-out;
 }
 
 
 .parallax-text button:hover
 {
 	cursor: pointer;
-	background-color: white;
-	color: black;
+	transform: scale(1.1);
+	color: #f15a22;
 	/*transition: background-color,color 500ms ease-in-out;
 	animation: btnHover 500ms;
 	animation-fill-mode: forwards;*/
@@ -634,6 +637,11 @@ html
 	.top-nav input[type="text"]
 	{
 		display: none;
+	}
+
+	.hero-section
+	{		
+		height: 1500px;		
 	}
 
 	#icon
