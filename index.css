@@ -187,12 +187,12 @@ html
 	/*top: 50%;
 	left: 50%;*/
 	top: 30%;
-	left: 20%;
+	left: 10%;
 	max-width: 700px;
 	display: flex;
 	flex-flow: column wrap;	
 	align-items: center;
-	transform: translate(-30%,-20%);
+	transform: translate(-10%,-30%);
 	height: auto;
 	z-index: 2;
 }
