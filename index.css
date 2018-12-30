@@ -807,14 +807,20 @@ html
 		transform: translate(-50%,-50%);
 	}
 
+	.hero-section .parallax
+	{
+		background-color: white;		
+	}
+
+
 	.hero-section .parallax-text p,.hero-section .parallax-text h2
 	{
-		color: white;
+		color: black;
 	}
 
 	.hero-section .parallax::before
 	{
-		display: none;
+		display: none;		
 		clip-path: none;
 		-webkit-clip-path: none;
 	}
