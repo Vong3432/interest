@@ -420,8 +420,8 @@ html
 	width: 100%;
 	/*overflow-x: auto;	*/
 	overflow: hidden;
-	padding-top: 30px;	
-	padding-bottom: 30px;
+	
+	padding-bottom: 50px;
 	/*-webkit-overflow-scrolling: touch;
 	  -webkit-scroll-snap-points-x: repeat(600px);
       -ms-scroll-snap-points-x: repeat(600px);
@@ -430,8 +430,7 @@ html
       -ms-scroll-snap-type: mandatory;
           scroll-snap-type: mandatory;*/
 	justify-content: center;
-	align-items: center;	
-	min-height: 120vh;
+	align-items: flex-start;	
 	height: auto;
 	/*background-color: red;*/
 }
