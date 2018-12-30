@@ -1,3 +1,5 @@
+alert("The page is not completed yet...");
+
 $(window).scroll(function(){
 	parallax();
 	shrink();
