@@ -371,6 +371,28 @@ html
 	color: white;
 }
 
+.intro-section .intro-content button
+{		
+	max-width: 400px;	
+	width: 100%;
+	height: auto;	
+	padding: 20px;
+	font-size: 2.5rem;	
+	border:2px solid white;
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	transition: background-color,color,border 700ms ease-in-out;
+	-webkit-transition:background-color,color,border 700ms ease-in-out;;
+}
+
+.intro-section .intro-content button:hover
+{
+	background-color: white;
+	color: black;
+	border:2px solid black;
+	cursor: pointer;
+}
+
 .small-section
 {
 	position: relative;	
@@ -773,6 +795,11 @@ html
 .font_Merriweather
 {
 	font-family: 'Merriweather', serif;
+}
+
+.font_PermanentMarker
+{
+	font-family: 'Permanent Marker', cursive;
 }
 
 @media screen and (min-width: 1025px)
