@@ -5,8 +5,8 @@ var app = new Vue({
 		image:"socks.jpg",
 		altText:"This is a sock",
 		link:"https://www.target.com.au/medias/static_content/product/images/large/15/43/A241543.jpg",
-		inStock:false,
-		inventory:0,
+		inStock:true,
+		inventory:10,
 		onSale:true,
 		details:["80% cotton","20% polyester","Gender-neutral"],
 		
