@@ -1,5 +1,10 @@
 @import "index.css";
 
+*,::after,::before
+{
+	box-sizing: border-box;
+}
+
 .carousel
 {
 	position: relative;

@@ -1,0 +1,25 @@
+.color-box
+{
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+}
+
+button{
+	margin-top: 30px;
+	border:none;
+	background-color: #1E95EA;
+	color: white;
+	height: 40px;
+	width: 100px;
+}
+
+.disabledButton
+{
+	background-color: grey;
+}
+
+.Out_of_Stock
+{
+	text-decoration: line-through;
+}

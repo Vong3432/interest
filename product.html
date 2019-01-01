@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div id="app">
+	<div class="product">
+		<!-- image -->
+		<div class="product-image">
+			<a :href="link">
+				<img :src="image" :alt="altText" style="max-width: 300px;max-height: 300px;object-fit: cover;" />
+			</a>
+		</div>
+
+		<!-- info -->
+		<div class="product-info">
+			<h1> {{ product }} </h1>
+			<!-- If else logic -->
+			<p v-if="inventory > 10">In Stock</p>
+			<p v-else-if="inventory > 0 && inventory < 10">Almost sold out</p>
+			<p v-else			   
+			   :class="{ Out_of_Stock: !inStock }"
+			   >
+				Out of Stock
+			</p> 
+
+			<!-- More performant than using if else
+				<p v-show="inStock">In Stock</p>
+			 -->
+			 <span v-show="onSale">On Sale!</span>
+
+			 <!-- For loops -->
+			 <ul>
+			 	<li v-for="detail in details">{{ detail }}</li>			 	
+			 </ul>	
+
+			 <!-- Display color of object with for loops -->
+			 <div class="color-box"
+			 	  v-for="variant in variants"
+			 	  :key="variant.variantId"
+			 	  :style="{backgroundColor:variant.variantColor}"
+			 	  @mouseover="updateProduct(variant.variantImage)"
+			 	  >
+			 </div>		
+
+			 <ul>
+			 	<li v-for="size in sizes">{{ size }}</li>
+			 </ul>
+
+			 <div class="cart">
+			 	<p>Cart({{ cart }})</p>
+			 	<button v-on:click="addToCart"
+			 			:disabled="!inStock"
+			 			:class="{ disabledButton: !inStock }">
+			 			Add to cart
+			 	</button>
+			 	<button @click="dropFromCart">Drop from cart</button>
+			 </div>
+
+		</div>
+		 
+	</div>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="main.js"></script>
+</body>
+</html>
